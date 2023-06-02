@@ -27,10 +27,10 @@
 
 				<div class="header__mobile">
 					<nav class="nav">
-						<a href="#" class="nav__link">О бизнес-сменах</a>
-						<a href="#" class="nav__link">Программа</a>
-						<a href="#" class="nav__link">Расписание</a>
-						<a href="#" class="nav__link">О нас</a>
+						<a href="#" class="nav__link" data-scroll="#about-busines">О бизнес-сменах</a>
+						<a href="#" class="nav__link" data-scroll="#program">Программа</a>
+						<a href="#" class="nav__link" data-scroll="#schedule">Расписание</a>
+						<a href="#" class="nav__link" data-scroll="#about-us">О нас</a>
 					</nav>
 					<a href="tel:+79114122640" class="header__phone--link">+7 911 412 26 40</a>
 
@@ -66,7 +66,7 @@
 					<p class="intro__text">19 июня – 23 июня 2023 г.</p>
 					<p class="intro__text">10 июля – 14 июля 2023 г.</p>
 					<p class="intro__text">14 августа – 18 августа 2023 г.</p>
-					<button class="btn intro__btn" type="button">Записаться</button>
+					<button class="btn intro__btn first__btn" type="button">Записаться</button>
 				</div>
 			</div>
 		</section>
@@ -142,18 +142,20 @@
 		<div class="discount">
 			<div class="container">
 				<div class="discount__inner">
-					<p class="discount__text-top">Действует скидка раннего бронирования</p>
-					<p class="discount__text-bottom">20% - до 5 июня 2023 года</p>
-					<button type="button" class="btn discount__btn">Забронировать</button>
+					<div class="discount__text">
+						<p class="discount__text-top">Действует скидка раннего бронирования</p>
+						<p class="discount__text-bottom">20% - до 5 июня 2023 года</p>
+					</div>
+					<button type="button" class="btn discount__btn second__btn">Забронировать</button>
 				</div>
 			</div>
 		</div>
 
-		<section class="intensive">
+		<section class="intensive" id="about-busines">
 			<div class="container">
 				<h2 class="intensive__title">О БИЗНЕС-ИНТЕНСИВАХ</h2>
 				<div class="intensive__inner">
-					<img src="img/intensive/1.png" alt="Дети сидят за столом" width="960" height="1280">
+					<img src="img/intensive/1.jpg" alt="Дети сидят за столом" width="960" height="1280">
 					<div class="intensive__text-wraper">
 						<p class="intensive__text"><span class="intensive__selection">Две возрастные группы: </span>9-12 лет, 12-17 лет</p>
 						<p class="intensive__text"><span class="intensive__selection">Продолжительность смены: </span>5 дней с понедельника по пятницу. Можно выбрать несколько разных смен.</p>
@@ -167,11 +169,11 @@
 					
 					</div>
 				</div>
-				<div class="btn-wrapper"><button type="button" class="btn intensive__btn">Забронировать</button>
+				<div class="btn-wrapper"><button type="button" class="btn intensive__btn first__btn">Забронировать</button>
 			</div>
 		</section>
 
-		<section class="program">
+		<section class="program" id="program"> 
 			<div class="container">
 				<h2 class="program__title">ПРОГРАММА СМЕН</h2>
 				<div class="program__inner">
@@ -232,8 +234,8 @@
 			
 			<div class="price__inner-top overlay">
 				<h2 class="price__title">Стоимость смены</h2>
-				<p class="price__content">до 5 июня действует акция раннего бронирования <br><strong>7840 руб. вместо <span class="red">9800 руб.</strong></span></p>
-				<button type="button" class="btn price__btn">Забронировать</button>
+				<p class="price__content">до 5 июня действует акция раннего бронирования <br><strong>7840 руб. вместо <span class="red">9800 руб.</span></strong></p>
+				<button type="button" class="btn price__btn first__btn">Забронировать</button>
 			</div>
 			<div class="container">
 				<div class="price__inner-bottom">
@@ -248,12 +250,12 @@
 			</div>
 		</section>
 
-		<section class="schedule">
-			
-			<div class="container schedule__wraper">
-				<img src="img/schedule/1.png" alt="" width="1280" height="853">
+		<section class="schedule overlay" id="schedule">
+			<div class="container">
+
 				<div class="schedule__inner">
 					<h2 class="schedule__title">Расписание дня</h2>
+
 					<p class="schedule__text">10.00 -10.15  Приветствие, вводный инструктаж</p>
 					<p class="schedule__text">10.15 - 11.30  Первый блок тематических занятий</p>
 					<p class="schedule__text">11.30 -12.00  Кофе-пауза</p>
@@ -271,14 +273,16 @@
 		<div class="discount">
 			<div class="container">
 				<div class="discount__inner">
-					<p class="discount__text-top">Действует скидка раннего бронирования</p>
-					<p class="discount__text-bottom">20% - до 5 июня 2023 года</p>
-					<button type="button" class="btn discount__btn">Забронировать</button>
+					<div class="discount__text">
+						<p class="discount__text-top">Действует скидка раннего бронирования</p>
+						<p class="discount__text-bottom">20% - до 5 июня 2023 года</p>
+					</div>
+					<button type="button" class="btn discount__btn second__btn">Забронировать</button>
 				</div>
 			</div>
 		</div>
 
-		<section class="organizer">
+		<section class="organizer" id="about-us">
 			<div class="container">
 				<div class="organizer__inner">
 					<h2 class="organizer__title">Организаторы бизнес-интенсивов</h2>
@@ -323,11 +327,15 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="footer__inner">
-				<a href="#" class="footer__link">Способы оплаты</a>
-				<p class="footer__text">ИП Данилова И.А.</p>
-				<p class="footer__text">ИП Хаута М.Е.</p>
-				<p class="footer__text">2023 Петрозаводск</p>
-				<button type="button" class="to-up">Вверх</button>
+				<a href="payment.html" class="footer__link">Способы оплаты</a>
+				<div class="footer__content">
+					<p class="footer__text">ИП Данилова И.А.</p>
+					<p class="footer__text">ИП Хаута М.Е.</p>
+					<p class="footer__text">2023 Петрозаводск</p>
+				</div>
+				<button type="button" class="to-up">Вверх
+					<svg role="presentation" width="5" height="17" viewBox="0 0 6 20"><path fill="#ffffff" d="M5.78 3.85L3.12.28c-.14-.14-.3-.14-.43 0L.03 3.85c-.14.13-.08.27.13.27h1.72V20h2.06V4.12h1.72c.15 0 .22-.07.19-.17a.26.26 0 00-.07-.1z" fill-rule="evenodd"></path></svg>
+				</button>
 			</div>
 		</div>
 	</footer>
@@ -346,31 +354,56 @@
 
 
 
-	<div class="popup">
+	<div class="popup popup--first">
 		<img class="popup__image" src="img/intro/intro-bg.jpg" alt="Дети в обучаещем классе" width="460" height="300">
 		<div class="popup__inner">
 
-			<form class="form" action="#">
+			<form class="form" action="#" method="post">
 				<h2 class="form__title">Запишите ребенка <br>на бизнес-интенсивы</h2>
 				<p class="form__subtitle">Подарите ребёнку 10 дней увлекательных игр, новых знакомств, личностного роста и незабываемых впечатлений!</p>
 
 				<div class="form__choose">
 					<p class="form__choose-title">Выберите бизнес-смену</p>
-					<label><input type="radio" name="change">Новая Карелия (июнь)</label>
+					<label><input type="radio" name="change" required>Новая Карелия (июнь)</label>
 					<label><input type="radio" name="change">Маркетинг и PR (июль)</label>
 					<label><input type="radio" name="change">Графический дизайн и производство (август)</label>
 				</div>
-				<input type="text" class="form__name" placeholder="Как вас зовут?">
-				<input type="text" class="form__name-child" placeholder="Имя ребенка">
-				<input type="text" class="form__old-child" placeholder="Возраст ребенка">
-				<input type="phone" class="form__phone" placeholder="+7 (999) 999-99-99">
-				<input type="email" class="form__email" placeholder="Ваш e-mail">
+				<input type="text" class="form__name" placeholder="Как вас зовут?" required>
+				<input type="text" class="form__name-child" placeholder="Имя ребенка" required>
+				<input type="text" class="form__old-child" placeholder="Возраст ребенка" required>
+				<input type="tel" class="form__phone" placeholder="+7 (999) 999-99-99" required>
+				<input type="email" class="form__email" placeholder="Ваш e-mail" required>
 				<button class="btn popup__btn" type="submit">Забронировать место</button>
+				<div class="brone-text">Нажимая «Забронировать место», Вы даете согласие на обработку своих персональных данных.</div>
 			</form>
 			<button class="popup__close" type="button">Закрыть окно</button>
 		</div>
 		
 	</div>
+
+	<div class="popup popup--second">
+		<div class="popup__inner">
+
+			<form class="form" action="#" method="post">
+				<h2 class="form__title">Запишите ребенка <br>на бизнес-интенсивы</h2>
+				<p class="form__subtitle">Подарите ребёнку 10 дней увлекательных игр, новых знакомств, личностного роста и незабываемых впечатлений!</p>
+
+				<div class="form__choose">
+					<p class="form__choose-title">Выберите бизнес-смену</p>
+					<label><input type="radio" name="change" required>Новая Карелия (июнь)</label>
+					<label><input type="radio" name="change">Маркетинг и PR (июль)</label>
+					<label><input type="radio" name="change">Графический дизайн и производство (август)</label>
+				</div>
+				<button class="btn popup__btn" type="submit">Забронировать место</button>
+				<div class="brone-text">Нажимая «Забронировать место», Вы даете согласие на обработку своих персональных данных.</div>
+			</form>
+			<button class="popup__close" type="button">Закрыть окно</button>
+		</div>
+		
+	</div>
+
+
+
 
 
 	<div class="modal modal-tourism">
@@ -384,7 +417,7 @@
 				<p class="modal__text"><strong>РАЗВЛЕКАТЕЛЬНЫЙ ТРЕК</strong><br>Деловые игры, творческие мастер-классы и тренинги, настольные бизнес-игры, экскурсии, прогулки и активные игры на свежем воздухе, просмотр фильмов в киноцентрах города.</p>
 				<p class="modal__text"><strong>РЕЗУЛЬТАТ СМЕНЫ</strong><br>В последний день смены команды представят свои реализованные бизнес-кейсы членам экспертного жюри, предпринимателям, родителям, которые будут оценивать результаты ребят в различных номинациях.</p>
 				<p class="modal__text"><strong>МЕСТО ПРОВЕДЕНИЯ</strong><br>Центр опережающей профессиональной подготовки Республики Карелия (площадка Автотранспортного техникума), ул. Ленинградская, 11, второй этаж</p>
-				<button type="button" class="btn modal__btn">Записаться</button>
+				<button type="button" class="btn modal__btn first__btn">Записаться</button>
 				<button type="button" class="modal__close">Закрыть</button>
 			</div>
 		</div>
@@ -401,7 +434,7 @@
 				<p class="modal__text"><strong>РАЗВЛЕКАТЕЛЬНЫЙ ТРЕК</strong><br>ДДеловые игры, творческие мастер-классы и тренинги, настольные бизнес-игры, фото и видео-съемки  в живописных локациях города, экскурсии, прогулки и активные игры на свежем воздухе, просмотр фильмов в киноцентрах города.</p>
 				<p class="modal__text"><strong>РЕЗУЛЬТАТ СМЕНЫ</strong><br>В последний день смены команды представят свои реализованные бизнес-кейсы членам экспертного жюри, предпринимателям, родителям, которые будут оценивать результаты ребят в различных номинациях.</p>
 				<p class="modal__text"><strong>МЕСТО ПРОВЕДЕНИЯ</strong><br>Центр опережающей профессиональной подготовки Республики Карелия (площадка Автотранспортного техникума), ул. Ленинградская, 11, второй этаж</p>
-				<button type="button" class="btn modal__btn">Записаться</button>
+				<button type="button" class="btn modal__btn first__btn">Записаться</button>
 				<button type="button" class="modal__close">Закрыть</button>
 			</div>
 		</div>
@@ -418,7 +451,7 @@
 				<p class="modal__text"><strong>РАЗВЛЕКАТЕЛЬНЫЙ ТРЕК</strong><br>ДДеловые игры, творческие мастер-классы и тренинги, настольные бизнес-игры, экскурсии, прогулки и активные игры на свежем воздухе, просмотр фильмов в киноцентрах города.</p>
 				<p class="modal__text"><strong>РЕЗУЛЬТАТ СМЕНЫ</strong><br>В последний день смены команды представят свои реализованные бизнес-проекты членам экспертного жюри, предпринимателям, родителям, которые будут оценивать результаты ребят в различных номинациях.</p>
 				<p class="modal__text"><strong>МЕСТО ПРОВЕДЕНИЯ</strong><br>Центр опережающей профессиональной подготовки Республики Карелия (площадка Автотранспортного техникума), ул. Ленинградская, 11, второй этаж</p>
-				<button type="button" class="btn modal__btn">Записаться</button>
+				<button type="button" class="btn modal__btn first__btn">Записаться</button>
 				<button type="button" class="modal__close">Закрыть</button>
 			</div>
 		</div>

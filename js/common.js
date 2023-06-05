@@ -1,8 +1,5 @@
-/*$(function() {
+$(function() {
 
-	// Custom JS
-
-});*/
 
 
 //main-menu
@@ -118,3 +115,23 @@ for (let dataScroll of dataScrolls) {
 		menu.classList.remove('menu__open');
 	})
 };
+
+//slider
+$('.survey__form').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow: '<button type="button" class="slick-prev">&larr; Назад</button>',
+	nextArrow: '<button type="button" class="slick-next">Вперед &rarr;</button>',
+	infinite: false,
+	adaptiveHeight: true,
+	swipe: false,
+	draggable: false,
+	speed: 0,
+});
+
+
+
+
+
+});

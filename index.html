@@ -480,7 +480,7 @@
 		<img class="popup__image" src="img/intro/intro-bg.jpg" alt="Дети в обучаещем классе" width="460" height="300">
 		<div class="popup__inner">
 
-			<form class="form" action="#" method="post">
+			<form class="form" action="mail.php" method="POST" enctype="multipart/form-data"> 
 				<h2 class="form__title">Запишите ребенка <br>на бизнес-интенсивы</h2>
 				<p class="form__subtitle">Подарите ребёнку 5 дней увлекательных игр, новых знакомств, личностного роста и незабываемых впечатлений!</p>
 
@@ -490,11 +490,11 @@
 					<label><input type="checkbox" name="change">Маркетинг и PR (июль)</label>
 					<label><input type="checkbox" name="change">Графический дизайн и производство (август)</label>
 				</div>
-				<input type="text" class="form__name" placeholder="Как вас зовут?" required>
-				<input type="text" class="form__name-child" placeholder="Имя ребенка" required>
-				<input type="text" class="form__old-child" placeholder="Возраст ребенка" required>
-				<input type="tel" class="form__phone" placeholder="+7 (999) 999-99-99" required>
-				<input type="email" class="form__email" placeholder="Ваш e-mail" required>
+				<input type="text" class="form__name" name="form__name" placeholder="Как вас зовут?" required>
+				<input type="text" class="form__name-child" name="form__name-child" placeholder="Имя ребенка" required>
+				<input type="text" class="form__old-child" name="form__old-child" placeholder="Возраст ребенка" required>
+				<input type="tel" class="form__phone" name="form__phone" placeholder="+7 (999) 999-99-99" required>
+				<input type="email" class="form__email" name="form__email" placeholder="Ваш e-mail" required>
 				<button class="btn popup__btn" type="submit">Забронировать место</button>
 				<div class="brone-text">Нажимая «Забронировать место», Вы даете согласие на обработку своих персональных данных.</div>
 			</form>

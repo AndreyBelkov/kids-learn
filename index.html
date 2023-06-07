@@ -334,11 +334,11 @@
 						Ответьте на 5 простых вопросов <br>и получите скидку 1000 ₽ на любую смену
 					</div>
 
-					<form action="#" method="post" class="survey__form">
+					<form action="mail.php" method="POST" class="survey__form">
 
 						<div class="survey__form-item form-item-old">
 							<div class="survey__form-item-title">Сколько лет вашему ребёнку?</div>
-							<label><input type="number" placeholder="полных лет (цифра)"></label>
+							<label><input type="number" name="form__old-child" placeholder="полных лет (цифра)"></label>
 						</div>
 
 						<div class="survey__form-item">
@@ -428,9 +428,9 @@
 						</div>
 
 						<div class="survey__form-item survey__form-item-submit">
-							<label><input type="text" placeholder="Ваше имя" required></label>
-							<label><input type="tel" placeholder="Ваш телефон" required></label>
-							<label><input type="email" placeholder="Ваш email" required></label>
+							<label><input type="text" name="form__name" placeholder="Ваше имя" required></label>
+							<label><input type="tel" name="form__phone" placeholder="Ваш телефон" required></label>
+							<label><input type="email" name="form__email" placeholder="Ваш email" required></label>
 							<div class="btn-wrapper">
 								<button class="btn" type="submit">Узнать результат</button>
 							</div>
@@ -480,15 +480,17 @@
 		<img class="popup__image" src="img/intro/intro-bg.jpg" alt="Дети в обучаещем классе" width="460" height="300">
 		<div class="popup__inner">
 
-			<form class="form" action="mail.php" method="POST" enctype="multipart/form-data"> 
+
+
+			<form class="form" action="mail.php" method="POST"> 
 				<h2 class="form__title">Запишите ребенка <br>на бизнес-интенсивы</h2>
 				<p class="form__subtitle">Подарите ребёнку 5 дней увлекательных игр, новых знакомств, личностного роста и незабываемых впечатлений!</p>
 
 				<div class="form__choose">
 					<p class="form__choose-title">Выберите бизнес-смену</p>
-					<label><input type="checkbox" name="change">Новая Карелия (июнь)</label>
-					<label><input type="checkbox" name="change">Маркетинг и PR (июль)</label>
-					<label><input type="checkbox" name="change">Графический дизайн и производство (август)</label>
+					<label><input type="checkbox" name="business-shift" value="Новая Карелия (июнь)">Новая Карелия (июнь)</label>
+					<label><input type="checkbox" name="business-shift" value="Маркетинг и PR">Маркетинг и PR (июль)</label>
+					<label><input type="checkbox" name="business-shift" value="Графический дизайн и производство (август)">Графический дизайн и производство (август)</label>
 				</div>
 				<input type="text" class="form__name" name="form__name" placeholder="Как вас зовут?" required>
 				<input type="text" class="form__name-child" name="form__name-child" placeholder="Имя ребенка" required>
@@ -506,15 +508,15 @@
 	<div class="popup popup--second">
 		<div class="popup__inner">
 
-			<form class="form" action="#" method="post">
+			<form class="form" action="mail.php" method="POST">
 				<h2 class="form__title">Запишите ребенка <br>на бизнес-интенсивы</h2>
 				<p class="form__subtitle">Подарите ребёнку 5 дней увлекательных игр, новых знакомств, личностного роста и незабываемых впечатлений!</p>
 
 				<div class="form__choose">
 					<p class="form__choose-title">Выберите бизнес-смену</p>
-					<label><input type="checkbox" name="change">Новая Карелия (июнь)</label>
-					<label><input type="checkbox" name="change">Маркетинг и PR (июль)</label>
-					<label><input type="checkbox" name="change">Графический дизайн и производство (август)</label>
+					<label><input type="checkbox" name="business-shift" value="Новая Карелия (июнь)">Новая Карелия (июнь)</label>
+					<label><input type="checkbox" name="business-shift" value="Маркетинг и PR">Маркетинг и PR (июль)</label>
+					<label><input type="checkbox" name="business-shift" value="Графический дизайн и производство (август)">Графический дизайн и производство (август)</label>
 				</div>
 				<button class="btn popup__btn" type="submit">Забронировать место</button>
 				<div class="brone-text">Нажимая «Забронировать место», Вы даете согласие на обработку своих персональных данных.</div>
